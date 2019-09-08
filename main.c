@@ -44,7 +44,7 @@ int main() {
 			operating system is still waiting on the parent's copy
 			of the write end of the pipe */
 
-	const char* header = "0123456789ABCDEF0123456789ABCDE";
+	const char* header = "0123456789ABCDEF";
 	size_t buffer_size = strlen(header);
 	char body[buffer_size + 1];
 	memset(body, 0, buffer_size + 1); // Start off with the empty string.
